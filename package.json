@@ -18,8 +18,8 @@
         "example" : "example"
     },
     "dependencies" : {
-      "nodemailer":"0.3.x",
-        "ent" : "0.0.x"
+      "he" : "0.5.x",
+      "nodemailer":"0.3.x"
     },
     "devDependencies" : {
         "tap" : "0.1.x",

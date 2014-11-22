@@ -1,7 +1,7 @@
 var url = require('url');
 var EventEmitter = require('events').EventEmitter;
 var mailer = require('nodemailer');
-var ent = require('ent');
+var he = require('he');
 
 module.exports = function (opts) {
     if (typeof opts === 'string') {
@@ -32,7 +32,7 @@ module.exports = function (opts) {
                 'Click this link to reset your password:\r\n',
                 '<br>',
                 '<a href="' + encodeURI(uri) + '">',
-                ent.encode(uri),
+                he.encode(uri),
                 '</a>',
                 ''
             ].join('\r\n')
